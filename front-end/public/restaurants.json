@@ -1,0 +1,93 @@
+[
+  {
+    "_id": 1,
+    "title": "Njeiforbi ChickN' Burger",
+    "category": "Catering, Lounge/Restaurant",
+    "address": "Molyko, Buea",
+    "coverImage": "restaurant-1.png"
+  },
+  {
+    "_id": 2,
+    "title": "The Cave Lounge",
+    "category": "Catering, Lounge/Restaurant",
+    "address": "Molyko, Buea",
+    "coverImage": "restaurant-2.jpg"
+  },
+  {
+    "_id": 3,
+    "title": "Sparkland Restaurant",
+    "category": "Catering, Restaurant",
+    "address": "Molyko, Buea",
+    "coverImage": "restaurant-3.jpg"
+  },
+  {
+    "_id": 4,
+    "title": "Klass Chill",
+    "category": "Catering, Restaurant",
+    "address": "Untarred Malingo, Buea",
+    "coverImage": "restaurant-4.jpg"
+  },
+  {
+    "_id": 5,
+    "title": "Inyang Endurance",
+    "category": "Catering, Fast food",
+    "address": "Molyko, Buea",
+    "coverImage": "restaurant-5.jpg"
+  },
+  {
+    "_id": 6,
+    "title": "View",
+    "category": "Catering, Restaurant",
+    "address": "Opposite Buea mountain club",
+    "coverImage": "restaurant-6.jpg"
+  },
+  {
+    "_id": 7,
+    "title": "Karlie's Restaurant",
+    "category": "Catering, Restaurant/Glacier",
+    "address": "Untarred Malingo",
+    "coverImage": "restaurant-7.jpg"
+  },
+  {
+    "_id": 8,
+    "title": "K. My Choice (Kmc) Buea",
+    "category": "Catering, Fast food",
+    "address": "Adjacent Atlantic Bank, Molyko, Buea",
+    "coverImage": "restaurant-8.jpg"
+  },
+  {
+    "_id": 9,
+    "title": "Africa Gastronomic",
+    "category": "Catering, Restaurant",
+    "address": "Mile 17 Buea",
+    "coverImage": "restaurant-9.jfif"
+  },
+  {
+    "_id": 10,
+    "title": "Imma's Pastry Corner",
+    "category": "Creperie/Pizzaria/Patisserie",
+    "address": "Buea",
+    "coverImage": "restaurant-10.jpg"
+  },
+  {
+    "_id": 11,
+    "title": "Tini's Cakes and Pastry",
+    "category": "Catering, Creperie/Pizzaria/Patisserie",
+    "address": "Opposite Hotel Mermoz, Long street, Buea",
+    "coverImage": "restaurant-11.jpg"
+  },
+  {
+    "_id": 12,
+    "title": "Cake Queen & More",
+    "category": "Catering, Creperie/Pizzaria/Patisserie",
+    "address": "Buea",
+    "coverImage": "restaurant-12.jpg"
+  },
+  {
+    "_id": 13,
+    "title": "Josyl Cakes",
+    "category": "Catering, Creperie/Pizzaria/Patisserie",
+    "address": "Buea",
+    "coverImage": "restaurant-13.jpg"
+  }
+]
