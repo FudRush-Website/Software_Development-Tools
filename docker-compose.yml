@@ -1,0 +1,41 @@
+version: "3.8"
+services:
+  frontend:
+    build: ./front-end
+    container_name: react_frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./front-end:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true
+  backend:
+    build: ./back-end
+    container_name: node_backend
+    ports:
+      - "5000:5000"
+    environment:
+      DB_HOST: localhost
+      DB_USER: root
+      DB_PASSWORD: 12345
+      DB_NAME: fudrush
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    
+#   database:
+#     image: mysql:latest
+#     container_name: mysql_db
+#     environment:
+#       MYSQL_ROOT_PASSWORD: 12345
+#       MYSQL_DATABASE: fudrush
+#       MYSQL_USER: User
+#       MYSQL_PASSWORD: mypassword
+#     ports:
+#       - "3306:3306"
+#     volumes:
+#       - mysql_data:/var/lib/mysql
+#     networks:
+#       - app-network
+# volumes:
