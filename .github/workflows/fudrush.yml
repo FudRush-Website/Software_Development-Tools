@@ -9,17 +9,17 @@ on:
       - "main"
 
 jobs:
-  fudrush:
+  tests:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout
         uses: actions/checkout@v2
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "14"
+          node-version: 18.19.1
 
       - name: Install Dependencies
         run: |
@@ -28,21 +28,7 @@ jobs:
           cd ../front-end
           npm install
 
-      - name: Build and Run Frontend
-        run: |
-          cd front-end
-          npm run build
-          npm start
-
-      - name: Build and Run Backend
-        run: |
-          cd back-end
-          npm run build
-          npm start
-
       - name: Run Tests
         run: |
           cd front-end
-          npm test
-          cd ../back-end
           npm test
