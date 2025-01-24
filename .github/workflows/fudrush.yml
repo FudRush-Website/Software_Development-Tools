@@ -1,0 +1,48 @@
+name: FudRush
+
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
+
+jobs:
+  fudrush:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Install Dependencies
+        run: |
+          cd back-end
+          npm install
+          cd ../front-end
+          npm install
+
+      - name: Build and Run Frontend
+        run: |
+          cd front-end
+          npm run build
+          npm start
+
+      - name: Build and Run Backend
+        run: |
+          cd back-end
+          npm run build
+          npm start
+
+      - name: Run Tests
+        run: |
+          cd front-end
+          npm test
+          cd ../back-end
+          npm test
