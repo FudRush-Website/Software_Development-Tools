@@ -2,12 +2,15 @@ FROM node:18.19.1-alpine
 
 WORKDIR /app
 
-COPY package.json .
+COPY package*.json ./
 
-RUN npm install
+RUN echo "Server is starting"
+
 
 COPY . .
 
-EXPOSE 3000
 
-CMD [ "npm", "start" ]
+EXPOSE 5173
+
+
+CMD ["npm", "run", "dev"]
